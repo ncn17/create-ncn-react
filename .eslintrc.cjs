@@ -7,11 +7,11 @@ module.exports = {
     'airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended',
+    'prettier',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh', 'prettier'],
+  plugins: ['react-refresh', 'prettier', 'jest-dom'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
@@ -19,7 +19,6 @@ module.exports = {
     ],
     '@typescript-eslint/comma-dangle': 0,
     'react/react-in-jsx-scope': 0,
-    'import/no-extraneous-dependencies': 0,
   },
   parserOptions: {
     ecmaVersion: 'latest',
