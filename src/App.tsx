@@ -1,16 +1,30 @@
-export default function App() {
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+
+/**
+ * Build a custom App Wrapped
+ * Init and config react router
+ * @returns App
+ */
+export function App() {
   return (
-    <>
-      <h1>Hello World !</h1>
-      <form>
-        <input
-          id="test"
-          name="test"
-          className="test-input"
-          aria-describedby="test_name_info"
-          placeholder="test input"
-        />
-      </form>
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
+}
+
+/**
+ * Build a custom App Wrapped
+ * Init and config react router
+ * @returns WrappedApp
+ */
+export function WrappedApp() {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   );
 }
