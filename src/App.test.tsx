@@ -4,11 +4,13 @@ import { MemoryRouter } from 'react-router-dom';
 
 import { App, WrappedApp } from './App';
 
+/**
+ * Add tests for main and not found page
+ */
 describe('App', () => {
   it('Renders hello world !', () => {
     // Arrange
     render(<WrappedApp />);
-
     screen.debug();
     // ACT // Assert oe Expect
     expect(
