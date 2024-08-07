@@ -3,7 +3,7 @@
 This is a complete custom template for build fast and professional
 react app.
 
-Version : `0.0.76`
+Version : `0.0.9`
 
 This template use best techno like
 
@@ -22,7 +22,7 @@ This template use best techno like
 This template provides a minimal setup to get React working in Vite
 
 ```js
-  Simple to use : clone template from : https://github.com/ncn17/ncn-react-template.git
+  Simple to use : clone template from : https://github.com/ncn17/create-ncn-react.git
 
   or init project directly from npm repository :
 
